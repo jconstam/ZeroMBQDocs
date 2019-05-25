@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['zerombq',['ZeroMBQ',['../index.html',1,'']]],
   ['zmbqconfig',['ZMBQConfig',['../d1/d9a/classZMBQConfig.html',1,'ZMBQConfig'],['../d1/d9a/classZMBQConfig.html#a4182462872b4175d75118f0d53d99a4d',1,'ZMBQConfig::ZMBQConfig()']]],
   ['zmbqdata',['ZMBQData',['../d3/d8a/classZMBQData.html',1,'']]],
   ['zmbqdatapoint',['ZMBQDataPoint',['../df/d8d/classZMBQDataPoint.html',1,'ZMBQDataPoint'],['../df/d8d/classZMBQDataPoint.html#ad74d128115a8800d1d2d709968a549c6',1,'ZMBQDataPoint::ZMBQDataPoint()'],['../df/d8d/classZMBQDataPoint.html#a1c6c5c6d3ba1c0e1a7878313fc2adb6a',1,'ZMBQDataPoint::ZMBQDataPoint(std::string name, std::string type)']]],

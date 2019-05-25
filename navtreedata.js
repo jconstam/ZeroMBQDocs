@@ -1,6 +1,8 @@
 var NAVTREE =
 [
   [ "ZeroMBQ", "index.html", [
+    [ "data flow", "md__home_travis_build_jconstam_ZeroMBQ_doc_Architecture.html", null ],
+    [ "Requirements", "md__home_travis_build_jconstam_ZeroMBQ_doc_Requirements.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
