@@ -1,8 +1,7 @@
 <map id="ZMBQConfig::parseMaps" name="ZMBQConfig::parseMaps">
-<area shape="rect" id="node2" href="$df/dda/classZMBQDataPointCollection.html#ad00aa4442ed0229e7d3eec45ebee7997" title="ZMBQDataPointCollection\l::dataPointExists" alt="" coords="252,5,439,47"/>
-<area shape="rect" id="node3" href="$d9/d60/classZMBQMap.html#a6ad67d8f8d5c2a361546255d4c2e8736" title="ZMBQMap::InitMap_ExpandMap" alt="" coords="233,71,457,98"/>
-<area shape="rect" id="node4" href="$d9/d60/classZMBQMap.html#ac6dd2af65556496d2e80dc401047a29d" title="ZMBQMap::InitMap_Generate" alt="" coords="240,122,451,149"/>
-<area shape="rect" id="node5" href="$d9/d60/classZMBQMap.html#aeb415fc50a9bfe0ceca8e3621603a22e" title="ZMBQMap::GetDataPointer\l_InputRegs" alt="" coords="247,173,443,215"/>
-<area shape="rect" id="node6" href="$d9/d60/classZMBQMap.html#a7723c7d09a8cf07ba57a4bfdb77b8140" title="ZMBQMap::GetDataPointer\l_HoldingRegs" alt="" coords="247,239,443,280"/>
-<area shape="rect" id="node7" href="$d9/d60/classZMBQMap.html#a03da6baa219535f2832b0e06858ca14a" title="ZMBQMap::GetName" alt="" coords="266,305,425,331"/>
+<area shape="rect" id="node2" href="$d9/d60/classZMBQMap.html#a6ad67d8f8d5c2a361546255d4c2e8736" title="ZMBQMap::InitMap_ExpandMap" alt="" coords="233,5,457,32"/>
+<area shape="rect" id="node3" href="$d9/d60/classZMBQMap.html#ac6dd2af65556496d2e80dc401047a29d" title="ZMBQMap::InitMap_Generate" alt="" coords="240,56,451,83"/>
+<area shape="rect" id="node4" href="$d9/d60/classZMBQMap.html#aeb415fc50a9bfe0ceca8e3621603a22e" title="ZMBQMap::GetDataPointer\l_InputRegs" alt="" coords="247,107,443,149"/>
+<area shape="rect" id="node5" href="$d9/d60/classZMBQMap.html#a7723c7d09a8cf07ba57a4bfdb77b8140" title="ZMBQMap::GetDataPointer\l_HoldingRegs" alt="" coords="247,173,443,214"/>
+<area shape="rect" id="node6" href="$d9/d60/classZMBQMap.html#a03da6baa219535f2832b0e06858ca14a" title="ZMBQMap::GetName" alt="" coords="266,239,425,265"/>
 </map>

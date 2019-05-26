@@ -5,7 +5,7 @@ var searchData=
   ['zmbqdata',['ZMBQData',['../d3/d8a/classZMBQData.html',1,'']]],
   ['zmbqdatapoint',['ZMBQDataPoint',['../df/d8d/classZMBQDataPoint.html',1,'ZMBQDataPoint'],['../df/d8d/classZMBQDataPoint.html#ad74d128115a8800d1d2d709968a549c6',1,'ZMBQDataPoint::ZMBQDataPoint()'],['../df/d8d/classZMBQDataPoint.html#a1c6c5c6d3ba1c0e1a7878313fc2adb6a',1,'ZMBQDataPoint::ZMBQDataPoint(std::string name, std::string type)']]],
   ['zmbqdatapointcollection',['ZMBQDataPointCollection',['../df/dda/classZMBQDataPointCollection.html',1,'ZMBQDataPointCollection'],['../df/dda/classZMBQDataPointCollection.html#aaec0a5e92a9c867faefa339dc4e72c6d',1,'ZMBQDataPointCollection::ZMBQDataPointCollection()']]],
-  ['zmbqmap',['ZMBQMap',['../d9/d60/classZMBQMap.html',1,'ZMBQMap'],['../d9/d60/classZMBQMap.html#af9595173489a95a49d9d502a596057f9',1,'ZMBQMap::ZMBQMap()'],['../d9/d60/classZMBQMap.html#a1094ba07edb4d6183bb7d00d0b86be23',1,'ZMBQMap::ZMBQMap(string name)']]],
+  ['zmbqmap',['ZMBQMap',['../d9/d60/classZMBQMap.html',1,'ZMBQMap'],['../d9/d60/classZMBQMap.html#af9595173489a95a49d9d502a596057f9',1,'ZMBQMap::ZMBQMap()'],['../d9/d60/classZMBQMap.html#a3fd205a32fcd15cc6d7eee1b425e1fcd',1,'ZMBQMap::ZMBQMap(std::string name)']]],
   ['zmq_5fbuffer_5fsize_5ffloat',['ZMQ_BUFFER_SIZE_FLOAT',['../da/d85/data_8hpp.html#af5a9a3ed45265b2822fda9824a484988',1,'data.hpp']]],
   ['zmq_5fbuffer_5fsize_5fmax',['ZMQ_BUFFER_SIZE_MAX',['../da/d85/data_8hpp.html#a6e0becb5d3e142bbb31b50dd1031c270',1,'data.hpp']]],
   ['zmq_5fbuffer_5fsize_5fuint16',['ZMQ_BUFFER_SIZE_UINT16',['../da/d85/data_8hpp.html#a124b66840161bea4a6a61c76c133c079',1,'data.hpp']]],
