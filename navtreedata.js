@@ -2,8 +2,8 @@ var NAVTREE =
 [
   [ "ZeroMBQ", "index.html", [
     [ "Unit Test Coverage", "test_coverage.html", null ],
-    [ "data flow", "md__home_travis_build_jconstam_ZeroMBQ_doc_Architecture.html", null ],
-    [ "Requirements", "md__home_travis_build_jconstam_ZeroMBQ_doc_Requirements.html", null ],
+    [ "Architecture", "Architecture.html", null ],
+    [ "Requirements", "Requirements.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -28,7 +28,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"Architecture.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

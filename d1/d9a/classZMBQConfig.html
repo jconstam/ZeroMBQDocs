@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ZeroMBQ
-   &#160;<span id="projectnumber">80</span>
+   &#160;<span id="projectnumber">85</span>
    </div>
    <div id="projectbrief">A ZeroMQ Modbus server. This library provides a system for bridging a ZeroMQ publish-subscribe network to a Modbus server/client network.</div>
   </td>
@@ -116,6 +116,9 @@ $(document).ready(function(){initNavTree('d1/d9a/classZMBQConfig.html','../../')
 </div><!--header-->
 <div class="contents">
 
+<p>Manages the system configuration.  
+ <a href="../../d1/d9a/classZMBQConfig.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="../../d8/dfd/config_8hpp_source.html">config.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for ZMBQConfig:</div>
@@ -133,27 +136,34 @@ Collaboration diagram for ZMBQConfig:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4182462872b4175d75118f0d53d99a4d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d9a/classZMBQConfig.html#a4182462872b4175d75118f0d53d99a4d">ZMBQConfig</a> ()</td></tr>
+<tr class="memdesc:a4182462872b4175d75118f0d53d99a4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic constructor. Currently does nothing.  <a href="#a4182462872b4175d75118f0d53d99a4d">More...</a><br /></td></tr>
 <tr class="separator:a4182462872b4175d75118f0d53d99a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01888621e4484578a4a89f20835e1812"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d9a/classZMBQConfig.html#a01888621e4484578a4a89f20835e1812">parseConfig</a> (std::string filePath)</td></tr>
+<tr class="memdesc:a01888621e4484578a4a89f20835e1812"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses the configuration file at the given path. Sets internal members based on the contents of the file.  <a href="#a01888621e4484578a4a89f20835e1812">More...</a><br /></td></tr>
 <tr class="separator:a01888621e4484578a4a89f20835e1812"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a9d0c33fa3a1efbf06ecf8f2a1ae785c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d9a/classZMBQConfig.html#a9d0c33fa3a1efbf06ecf8f2a1ae785c3">parseDataPoints</a> (const Json::Value dataPoints)</td></tr>
+<tr class="memdesc:a9d0c33fa3a1efbf06ecf8f2a1ae785c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses all of the data points at the given JSON node.  <a href="#a9d0c33fa3a1efbf06ecf8f2a1ae785c3">More...</a><br /></td></tr>
 <tr class="separator:a9d0c33fa3a1efbf06ecf8f2a1ae785c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29cc5ecfa08869e2d29077081f9da51f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d9a/classZMBQConfig.html#a29cc5ecfa08869e2d29077081f9da51f">parseMaps</a> (const Json::Value maps)</td></tr>
+<tr class="memdesc:a29cc5ecfa08869e2d29077081f9da51f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses all of the maps at the given JSON node.  <a href="#a29cc5ecfa08869e2d29077081f9da51f">More...</a><br /></td></tr>
 <tr class="separator:a29cc5ecfa08869e2d29077081f9da51f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a829cf7a941aead071df66477ff2a1bb6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dda/classZMBQDataPointCollection.html">ZMBQDataPointCollection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d9a/classZMBQConfig.html#a829cf7a941aead071df66477ff2a1bb6">m_dataPoints</a></td></tr>
+<tr class="memdesc:a829cf7a941aead071df66477ff2a1bb6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../df/dda/classZMBQDataPointCollection.html">ZMBQDataPointCollection</a> containing all of the data points in the configuration.  <a href="#a829cf7a941aead071df66477ff2a1bb6">More...</a><br /></td></tr>
 <tr class="separator:a829cf7a941aead071df66477ff2a1bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bfa3f76285027da61ac1c98f8211d2f"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="../../d9/d60/classZMBQMap.html">ZMBQMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d9a/classZMBQConfig.html#a4bfa3f76285027da61ac1c98f8211d2f">m_maps</a></td></tr>
+<tr class="memdesc:a4bfa3f76285027da61ac1c98f8211d2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">std::map containing all of the maps in the configuration.  <a href="#a4bfa3f76285027da61ac1c98f8211d2f">More...</a><br /></td></tr>
 <tr class="separator:a4bfa3f76285027da61ac1c98f8211d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="../../d8/dfd/config_8hpp_source.html#l00013">13</a> of file <a class="el" href="../../d8/dfd/config_8hpp_source.html">config.hpp</a>.</p>
+<div class="textblock"><p>Manages the system configuration. </p>
+
+<p>Definition at line <a class="el" href="../../d8/dfd/config_8hpp_source.html#l00017">17</a> of file <a class="el" href="../../d8/dfd/config_8hpp_source.html">config.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a4182462872b4175d75118f0d53d99a4d"></a>
 <div class="memitem">
@@ -167,6 +177,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Basic constructor. Currently does nothing. </p>
 
 <p>Definition at line <a class="el" href="../../df/d59/config_8cpp_source.html#l00009">9</a> of file <a class="el" href="../../df/d59/config_8cpp_source.html">config.cpp</a>.</p>
 
@@ -186,6 +198,17 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Parses the configuration file at the given path. Sets internal members based on the contents of the file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>The absolute path of the configuration file. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true - The configuration is valid and loaded. </dd>
+<dd>
+false - An error occurred loading the configuration file. </dd></dl>
 
 <p>Definition at line <a class="el" href="../../df/d59/config_8cpp_source.html#l00014">14</a> of file <a class="el" href="../../df/d59/config_8cpp_source.html">config.cpp</a>.</p>
 
@@ -213,6 +236,14 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Parses all of the data points at the given JSON node. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dataPoints</td><td>A JSON node containing a list of data points. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Definition at line <a class="el" href="../../df/d59/config_8cpp_source.html#l00028">28</a> of file <a class="el" href="../../df/d59/config_8cpp_source.html">config.cpp</a>.</p>
 
 </div>
@@ -238,6 +269,14 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Parses all of the maps at the given JSON node. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">maps</td><td>a JSON node containing a list of data points. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Definition at line <a class="el" href="../../df/d59/config_8cpp_source.html#l00041">41</a> of file <a class="el" href="../../df/d59/config_8cpp_source.html">config.cpp</a>.</p>
 
@@ -276,7 +315,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/dfd/config_8hpp_source.html#l00023">23</a> of file <a class="el" href="../../d8/dfd/config_8hpp_source.html">config.hpp</a>.</p>
+<p><a class="el" href="../../df/dda/classZMBQDataPointCollection.html">ZMBQDataPointCollection</a> containing all of the data points in the configuration. </p>
+
+<p>Definition at line <a class="el" href="../../d8/dfd/config_8hpp_source.html#l00037">37</a> of file <a class="el" href="../../d8/dfd/config_8hpp_source.html">config.hpp</a>.</p>
 
 </div>
 </div>
@@ -298,7 +339,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d8/dfd/config_8hpp_source.html#l00024">24</a> of file <a class="el" href="../../d8/dfd/config_8hpp_source.html">config.hpp</a>.</p>
+<p>std::map containing all of the maps in the configuration. </p>
+
+<p>Definition at line <a class="el" href="../../d8/dfd/config_8hpp_source.html#l00039">39</a> of file <a class="el" href="../../d8/dfd/config_8hpp_source.html">config.hpp</a>.</p>
 
 </div>
 </div>

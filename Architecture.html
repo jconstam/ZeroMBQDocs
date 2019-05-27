@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>ZeroMBQ: Requirements</title>
+<title>ZeroMBQ: Architecture</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ZeroMBQ
-   &#160;<span id="projectnumber">80</span>
+   &#160;<span id="projectnumber">85</span>
    </div>
    <div id="projectbrief">A ZeroMQ Modbus server. This library provides a system for bridging a ZeroMQ publish-subscribe network to a Modbus server/client network.</div>
   </td>
@@ -81,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('md__home_travis_build_jconstam_ZeroMBQ_doc_Requirements.html','');});
+$(document).ready(function(){initNavTree('Architecture.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -100,10 +100,61 @@ $(document).ready(function(){initNavTree('md__home_travis_build_jconstam_ZeroMBQ
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Requirements </div>  </div>
+<div class="title">Architecture </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"></div></div><!-- contents -->
+<div class="textblock"><h2>Data Flow</h2>
+<h3>ZMQ Receive -&gt; Data Store</h3>
+<ol type="1">
+<li>ZeroMQ message is published, the bridge ZMQSub task is subscribed to the tag</li>
+<li>The tag is looked up in the tag dictionary</li>
+<li>If the tag is found, the associated conversion method and destination array/register list (calculated or explicit? see discussion) is used to apply the values to the modbus array(s)</li>
+</ol>
+<h3>Stored Data -&gt; Modbus Read</h3>
+<ol type="1">
+<li>Modbus read request is recieved</li>
+</ol>
+<ol type="1">
+<li>Look up the map that is associated with the given ID (with a hook to pass for external handling)</li>
+<li>Check that the read is valid</li>
+<li>Generate response, copy out values directly from the specified array</li>
+</ol>
+<h3>Modbus Write -&gt; Stored Data &amp; ZMQ Send</h3>
+<ol type="1">
+<li>Modbus write request is recieved</li>
+<li>Look up the map that is associated with the given ID (with a hook to pass for external handling)</li>
+<li>Check that the write is valid (all registers must pass before writing)</li>
+<li>Update all values in the array</li>
+<li>Somehow determine which tags are affected and Publish ZMQ message(s) for the changes (here be dragons) see discussion...</li>
+</ol>
+<h2>Conversion</h2>
+<p>Any data conversion for endianness/float swapping shall be handled before writing to the array.</p>
+<h2>Initialization</h2>
+<ol type="1">
+<li>Modbus access is blocked</li>
+</ol>
+<ol type="1">
+<li>All registers are initialized to zero</li>
+<li>User defined initialization values are applied (by ZeroMQ or other means?)</li>
+</ol>
+<ol type="1">
+<li>A configuration done signal (specific ZeroMQ message?) is sent</li>
+</ol>
+<ol type="1">
+<li>Modbus access is unblocked</li>
+</ol>
+<h2>Configuration</h2>
+<ol type="1">
+<li>configure</li>
+<li>profit</li>
+<li>???</li>
+<li>^^wrong order?</li>
+</ol>
+<h2>Discussion</h2>
+<p>Should allow calculating register number based on tag name or must have full 1-&gt;1 mapping for each tag/register?</p>
+<p>Downside is a change of float swapping configuration will require a reinit: all float data currenlty in the map invalid. Could force 'swap' handling to exist at conversion function level -&gt; no longer a property of a map itself but of the conversion definition for registers in that map.</p>
+<p>For write, an alternative to the above is not updating the array directly but publishing messages for each write and expecting the user system to re-publish updated register values on different tag names which are updated using the above method. Could also support a hybrid. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
