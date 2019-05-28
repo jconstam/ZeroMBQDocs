@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ZeroMBQ
-   &#160;<span id="projectnumber">85</span>
+   &#160;<span id="projectnumber">89</span>
    </div>
    <div id="projectbrief">A ZeroMQ Modbus server. This library provides a system for bridging a ZeroMQ publish-subscribe network to a Modbus server/client network.</div>
   </td>
@@ -115,6 +115,9 @@ $(document).ready(function(){initNavTree('d9/d60/classZMBQMap.html','../../');})
 </div><!--header-->
 <div class="contents">
 
+<p>Class containing a Modbus map.  
+ <a href="../../d9/d60/classZMBQMap.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="../../d7/d5b/modbusMap_8hpp_source.html">modbusMap.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for ZMBQMap:</div>
@@ -129,34 +132,46 @@ Collaboration diagram for ZMBQMap:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af9595173489a95a49d9d502a596057f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d60/classZMBQMap.html#af9595173489a95a49d9d502a596057f9">ZMBQMap</a> ()</td></tr>
+<tr class="memdesc:af9595173489a95a49d9d502a596057f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic constructor. Initializes a Modbus map with the name "Unknown".  <a href="#af9595173489a95a49d9d502a596057f9">More...</a><br /></td></tr>
 <tr class="separator:af9595173489a95a49d9d502a596057f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fd205a32fcd15cc6d7eee1b425e1fcd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d60/classZMBQMap.html#a3fd205a32fcd15cc6d7eee1b425e1fcd">ZMBQMap</a> (std::string name)</td></tr>
+<tr class="memdesc:a3fd205a32fcd15cc6d7eee1b425e1fcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common constructor. Initializes a Modbus map with the given name. Sets <a class="el" href="../../d9/d60/classZMBQMap.html#a29328f969f155db7760498745c293598">m_name</a>. Initializes <a class="el" href="../../d9/d60/classZMBQMap.html#a63c257edfaf4e13451c3b2d8f2e0cf44">m_size</a> to 0.  <a href="#a3fd205a32fcd15cc6d7eee1b425e1fcd">More...</a><br /></td></tr>
 <tr class="separator:a3fd205a32fcd15cc6d7eee1b425e1fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03da6baa219535f2832b0e06858ca14a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d60/classZMBQMap.html#a03da6baa219535f2832b0e06858ca14a">GetName</a> ()</td></tr>
+<tr class="memdesc:a03da6baa219535f2832b0e06858ca14a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the map's name.  <a href="#a03da6baa219535f2832b0e06858ca14a">More...</a><br /></td></tr>
 <tr class="separator:a03da6baa219535f2832b0e06858ca14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ad67d8f8d5c2a361546255d4c2e8736"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d60/classZMBQMap.html#a6ad67d8f8d5c2a361546255d4c2e8736">InitMap_ExpandMap</a> (uint32_t address, uint32_t count)</td></tr>
+<tr class="memdesc:a6ad67d8f8d5c2a361546255d4c2e8736"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new section to the map of the given size at the given address.  <a href="#a6ad67d8f8d5c2a361546255d4c2e8736">More...</a><br /></td></tr>
 <tr class="separator:a6ad67d8f8d5c2a361546255d4c2e8736"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6dd2af65556496d2e80dc401047a29d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d60/classZMBQMap.html#ac6dd2af65556496d2e80dc401047a29d">InitMap_Generate</a> ()</td></tr>
+<tr class="memdesc:ac6dd2af65556496d2e80dc401047a29d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the map based on the sections that have been added with <a class="el" href="../../d9/d60/classZMBQMap.html#a6ad67d8f8d5c2a361546255d4c2e8736">ZMBQMap::InitMap_ExpandMap</a>.  <a href="#ac6dd2af65556496d2e80dc401047a29d">More...</a><br /></td></tr>
 <tr class="separator:ac6dd2af65556496d2e80dc401047a29d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb415fc50a9bfe0ceca8e3621603a22e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d60/classZMBQMap.html#aeb415fc50a9bfe0ceca8e3621603a22e">GetDataPointer_InputRegs</a> (uint32_t address)</td></tr>
+<tr class="memdesc:aeb415fc50a9bfe0ceca8e3621603a22e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the pointer to the input registers at the given address.  <a href="#aeb415fc50a9bfe0ceca8e3621603a22e">More...</a><br /></td></tr>
 <tr class="separator:aeb415fc50a9bfe0ceca8e3621603a22e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7723c7d09a8cf07ba57a4bfdb77b8140"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d60/classZMBQMap.html#a7723c7d09a8cf07ba57a4bfdb77b8140">GetDataPointer_HoldingRegs</a> (uint32_t address)</td></tr>
+<tr class="memdesc:a7723c7d09a8cf07ba57a4bfdb77b8140"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the pointer to the holding registers at the given address.  <a href="#a7723c7d09a8cf07ba57a4bfdb77b8140">More...</a><br /></td></tr>
 <tr class="separator:a7723c7d09a8cf07ba57a4bfdb77b8140"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a29328f969f155db7760498745c293598"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d60/classZMBQMap.html#a29328f969f155db7760498745c293598">m_name</a></td></tr>
+<tr class="memdesc:a29328f969f155db7760498745c293598"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the map.  <a href="#a29328f969f155db7760498745c293598">More...</a><br /></td></tr>
 <tr class="separator:a29328f969f155db7760498745c293598"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12e2a07e7e01609c7dd5c2bbd5ef6323"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d60/classZMBQMap.html#a12e2a07e7e01609c7dd5c2bbd5ef6323">m_baseAddress</a></td></tr>
+<tr class="memdesc:a12e2a07e7e01609c7dd5c2bbd5ef6323"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base address of the map.  <a href="#a12e2a07e7e01609c7dd5c2bbd5ef6323">More...</a><br /></td></tr>
 <tr class="separator:a12e2a07e7e01609c7dd5c2bbd5ef6323"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63c257edfaf4e13451c3b2d8f2e0cf44"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d60/classZMBQMap.html#a63c257edfaf4e13451c3b2d8f2e0cf44">m_size</a></td></tr>
+<tr class="memdesc:a63c257edfaf4e13451c3b2d8f2e0cf44"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of the map in number of registers.  <a href="#a63c257edfaf4e13451c3b2d8f2e0cf44">More...</a><br /></td></tr>
 <tr class="separator:a63c257edfaf4e13451c3b2d8f2e0cf44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50bf0f881b48cbfbb7437827b4937f5d"><td class="memItemLeft" align="right" valign="top">modbus_mapping_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d60/classZMBQMap.html#a50bf0f881b48cbfbb7437827b4937f5d">m_dataMap</a></td></tr>
+<tr class="memdesc:a50bf0f881b48cbfbb7437827b4937f5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The actual map data. Type is from libModbus.  <a href="#a50bf0f881b48cbfbb7437827b4937f5d">More...</a><br /></td></tr>
 <tr class="separator:a50bf0f881b48cbfbb7437827b4937f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="../../d7/d5b/modbusMap_8hpp_source.html#l00008">8</a> of file <a class="el" href="../../d7/d5b/modbusMap_8hpp_source.html">modbusMap.hpp</a>.</p>
+<div class="textblock"><p>Class containing a Modbus map. </p>
+
+<p>Definition at line <a class="el" href="../../d7/d5b/modbusMap_8hpp_source.html#l00012">12</a> of file <a class="el" href="../../d7/d5b/modbusMap_8hpp_source.html">modbusMap.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="af9595173489a95a49d9d502a596057f9"></a>
 <div class="memitem">
@@ -179,18 +194,20 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d7/d5b/modbusMap_8hpp_source.html#l00011">11</a> of file <a class="el" href="../../d7/d5b/modbusMap_8hpp_source.html">modbusMap.hpp</a>.</p>
+<p>Basic constructor. Initializes a Modbus map with the name "Unknown". </p>
+
+<p>Definition at line <a class="el" href="../../d7/d5b/modbusMap_8hpp_source.html#l00016">16</a> of file <a class="el" href="../../d7/d5b/modbusMap_8hpp_source.html">modbusMap.hpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d9/d60/classZMBQMap_af9595173489a95a49d9d502a596057f9_cgraph.png" border="0" usemap="#d9/d60/classZMBQMap_af9595173489a95a49d9d502a596057f9_cgraph" alt=""/></div>
 <map name="d9/d60/classZMBQMap_af9595173489a95a49d9d502a596057f9_cgraph" id="d9/d60/classZMBQMap_af9595173489a95a49d9d502a596057f9_cgraph">
-<area shape="rect" id="node2" href="../../d9/d60/classZMBQMap.html#a03da6baa219535f2832b0e06858ca14a" title="ZMBQMap::GetName" alt="" coords="250,5,409,32"/>
-<area shape="rect" id="node3" href="../../d9/d60/classZMBQMap.html#a6ad67d8f8d5c2a361546255d4c2e8736" title="ZMBQMap::InitMap_ExpandMap" alt="" coords="217,56,441,83"/>
-<area shape="rect" id="node4" href="../../d9/d60/classZMBQMap.html#ac6dd2af65556496d2e80dc401047a29d" title="ZMBQMap::InitMap_Generate" alt="" coords="224,107,435,133"/>
-<area shape="rect" id="node5" href="../../d9/d60/classZMBQMap.html#aeb415fc50a9bfe0ceca8e3621603a22e" title="ZMBQMap::GetDataPointer\l_InputRegs" alt="" coords="231,158,427,199"/>
-<area shape="rect" id="node6" href="../../d9/d60/classZMBQMap.html#a7723c7d09a8cf07ba57a4bfdb77b8140" title="ZMBQMap::GetDataPointer\l_HoldingRegs" alt="" coords="231,223,427,265"/>
+<area shape="rect" id="node2" href="../../d9/d60/classZMBQMap.html#a03da6baa219535f2832b0e06858ca14a" title="Gets the map&#39;s name. " alt="" coords="250,5,409,32"/>
+<area shape="rect" id="node3" href="../../d9/d60/classZMBQMap.html#a6ad67d8f8d5c2a361546255d4c2e8736" title="Adds a new section to the map of the given size at the given address. " alt="" coords="217,56,441,83"/>
+<area shape="rect" id="node4" href="../../d9/d60/classZMBQMap.html#ac6dd2af65556496d2e80dc401047a29d" title="Generates the map based on the sections that have been added with ZMBQMap::InitMap_ExpandMap. " alt="" coords="224,107,435,133"/>
+<area shape="rect" id="node5" href="../../d9/d60/classZMBQMap.html#aeb415fc50a9bfe0ceca8e3621603a22e" title="Gets the pointer to the input registers at the given address. " alt="" coords="231,158,427,199"/>
+<area shape="rect" id="node6" href="../../d9/d60/classZMBQMap.html#a7723c7d09a8cf07ba57a4bfdb77b8140" title="Gets the pointer to the holding registers at the given address. " alt="" coords="231,223,427,265"/>
 </map>
 </div>
 </p>
@@ -211,6 +228,8 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Common constructor. Initializes a Modbus map with the given name. Sets <a class="el" href="../../d9/d60/classZMBQMap.html#a29328f969f155db7760498745c293598">m_name</a>. Initializes <a class="el" href="../../d9/d60/classZMBQMap.html#a63c257edfaf4e13451c3b2d8f2e0cf44">m_size</a> to 0. </p>
+
 <p>Definition at line <a class="el" href="../../d6/d4a/modbusMap_8cpp_source.html#l00007">7</a> of file <a class="el" href="../../d6/d4a/modbusMap_8cpp_source.html">modbusMap.cpp</a>.</p>
 
 </div>
@@ -230,6 +249,15 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Gets the pointer to the holding registers at the given address. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">address</td><td>The address to get a pointer to. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the desired holding registers. Can be null if the address is outside the bounds of the map. </dd></dl>
+
 <p>Definition at line <a class="el" href="../../d6/d4a/modbusMap_8cpp_source.html#l00042">42</a> of file <a class="el" href="../../d6/d4a/modbusMap_8cpp_source.html">modbusMap.cpp</a>.</p>
 
 </div>
@@ -248,6 +276,15 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Gets the pointer to the input registers at the given address. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">address</td><td>The address to get a pointer to. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the desired input registers. Can be null if the address is outside the bounds of the map. </dd></dl>
+
 <p>Definition at line <a class="el" href="../../d6/d4a/modbusMap_8cpp_source.html#l00030">30</a> of file <a class="el" href="../../d6/d4a/modbusMap_8cpp_source.html">modbusMap.cpp</a>.</p>
 
 </div>
@@ -264,6 +301,9 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Gets the map's name. </p>
+<dl class="section return"><dt>Returns</dt><dd>The name of the map (contained in <a class="el" href="../../d9/d60/classZMBQMap.html#a29328f969f155db7760498745c293598">m_name</a>). </dd></dl>
 
 <p>Definition at line <a class="el" href="../../d6/d4a/modbusMap_8cpp_source.html#l00014">14</a> of file <a class="el" href="../../d6/d4a/modbusMap_8cpp_source.html">modbusMap.cpp</a>.</p>
 
@@ -293,6 +333,15 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Adds a new section to the map of the given size at the given address. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">address</td><td>The base address of the new section. </td></tr>
+    <tr><td class="paramname">count</td><td>The number of registers in the new section. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Definition at line <a class="el" href="../../d6/d4a/modbusMap_8cpp_source.html#l00019">19</a> of file <a class="el" href="../../d6/d4a/modbusMap_8cpp_source.html">modbusMap.cpp</a>.</p>
 
 </div>
@@ -309,6 +358,8 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Generates the map based on the sections that have been added with <a class="el" href="../../d9/d60/classZMBQMap.html#a6ad67d8f8d5c2a361546255d4c2e8736">ZMBQMap::InitMap_ExpandMap</a>. </p>
 
 <p>Definition at line <a class="el" href="../../d6/d4a/modbusMap_8cpp_source.html#l00025">25</a> of file <a class="el" href="../../d6/d4a/modbusMap_8cpp_source.html">modbusMap.cpp</a>.</p>
 
@@ -333,7 +384,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d7/d5b/modbusMap_8hpp_source.html#l00024">24</a> of file <a class="el" href="../../d7/d5b/modbusMap_8hpp_source.html">modbusMap.hpp</a>.</p>
+<p>The base address of the map. </p>
+
+<p>Definition at line <a class="el" href="../../d7/d5b/modbusMap_8hpp_source.html#l00044">44</a> of file <a class="el" href="../../d7/d5b/modbusMap_8hpp_source.html">modbusMap.hpp</a>.</p>
 
 </div>
 </div>
@@ -355,7 +408,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d7/d5b/modbusMap_8hpp_source.html#l00027">27</a> of file <a class="el" href="../../d7/d5b/modbusMap_8hpp_source.html">modbusMap.hpp</a>.</p>
+<p>The actual map data. Type is from libModbus. </p>
+
+<p>Definition at line <a class="el" href="../../d7/d5b/modbusMap_8hpp_source.html#l00049">49</a> of file <a class="el" href="../../d7/d5b/modbusMap_8hpp_source.html">modbusMap.hpp</a>.</p>
 
 </div>
 </div>
@@ -377,7 +432,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d7/d5b/modbusMap_8hpp_source.html#l00022">22</a> of file <a class="el" href="../../d7/d5b/modbusMap_8hpp_source.html">modbusMap.hpp</a>.</p>
+<p>The name of the map. </p>
+
+<p>Definition at line <a class="el" href="../../d7/d5b/modbusMap_8hpp_source.html#l00041">41</a> of file <a class="el" href="../../d7/d5b/modbusMap_8hpp_source.html">modbusMap.hpp</a>.</p>
 
 </div>
 </div>
@@ -399,7 +456,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../d7/d5b/modbusMap_8hpp_source.html#l00025">25</a> of file <a class="el" href="../../d7/d5b/modbusMap_8hpp_source.html">modbusMap.hpp</a>.</p>
+<p>The size of the map in number of registers. </p>
+
+<p>Definition at line <a class="el" href="../../d7/d5b/modbusMap_8hpp_source.html#l00046">46</a> of file <a class="el" href="../../d7/d5b/modbusMap_8hpp_source.html">modbusMap.hpp</a>.</p>
 
 </div>
 </div>

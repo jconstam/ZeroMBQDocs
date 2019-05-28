@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ZeroMBQ
-   &#160;<span id="projectnumber">85</span>
+   &#160;<span id="projectnumber">89</span>
    </div>
    <div id="projectbrief">A ZeroMQ Modbus server. This library provides a system for bridging a ZeroMQ publish-subscribe network to a Modbus server/client network.</div>
   </td>
@@ -111,6 +111,9 @@ $(document).ready(function(){initNavTree('db/d3a/dataPoint_8hpp.html','../../');
 <div class="title">dataPoint.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Contains classes for managing individual data points and collections of them.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;map&gt;</code><br />
@@ -131,7 +134,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <area shape="rect" id="node2" href="../../df/d59/config_8cpp.html" title="/home/travis/build\l/jconstam/ZeroMBQ/src\l/config.cpp" alt="" coords="70,213,244,269"/>
 <area shape="rect" id="node3" href="../../dc/df2/dataPoint_8cpp.html" title="/home/travis/build\l/jconstam/ZeroMBQ/src\l/dataPoint.cpp" alt="" coords="28,109,201,165"/>
 <area shape="rect" id="node4" href="../../d8/dfd/config_8hpp.html" title="Contains a class for parsing the system config file and apply it to the system. " alt="" coords="226,109,424,165"/>
-<area shape="rect" id="node5" href="../../d8/df0/subscriber_8hpp.html" title="/home/travis/build\l/jconstam/ZeroMBQ/include\l/subscriber.hpp" alt="" coords="448,109,647,165"/>
+<area shape="rect" id="node5" href="../../d8/df0/subscriber_8hpp.html" title="Contains a class which manages a set of ZeroMQ subscriptions. " alt="" coords="448,109,647,165"/>
 <area shape="rect" id="node6" href="../../d8/d60/subscriber_8cpp.html" title="/home/travis/build\l/jconstam/ZeroMBQ/src\l/subscriber.cpp" alt="" coords="461,213,634,269"/>
 </map>
 </div>
@@ -141,11 +144,17 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d8d/classZMBQDataPoint.html">ZMBQDataPoint</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds and manages a single data point.  <a href="../../df/d8d/classZMBQDataPoint.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dda/classZMBQDataPointCollection.html">ZMBQDataPointCollection</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A collection of <a class="el" href="../../df/d8d/classZMBQDataPoint.html">ZMBQDataPoint</a> objects.  <a href="../../df/dda/classZMBQDataPointCollection.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Contains classes for managing individual data points and collections of them. </p>
+
+<p>Definition in file <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html">dataPoint.hpp</a>.</p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -1,7 +1,7 @@
 <map id="ZMBQMap::ZMBQMap" name="ZMBQMap::ZMBQMap">
-<area shape="rect" id="node2" href="$d9/d60/classZMBQMap.html#a03da6baa219535f2832b0e06858ca14a" title="ZMBQMap::GetName" alt="" coords="250,5,409,32"/>
-<area shape="rect" id="node3" href="$d9/d60/classZMBQMap.html#a6ad67d8f8d5c2a361546255d4c2e8736" title="ZMBQMap::InitMap_ExpandMap" alt="" coords="217,56,441,83"/>
-<area shape="rect" id="node4" href="$d9/d60/classZMBQMap.html#ac6dd2af65556496d2e80dc401047a29d" title="ZMBQMap::InitMap_Generate" alt="" coords="224,107,435,133"/>
-<area shape="rect" id="node5" href="$d9/d60/classZMBQMap.html#aeb415fc50a9bfe0ceca8e3621603a22e" title="ZMBQMap::GetDataPointer\l_InputRegs" alt="" coords="231,158,427,199"/>
-<area shape="rect" id="node6" href="$d9/d60/classZMBQMap.html#a7723c7d09a8cf07ba57a4bfdb77b8140" title="ZMBQMap::GetDataPointer\l_HoldingRegs" alt="" coords="231,223,427,265"/>
+<area shape="rect" id="node2" href="$d9/d60/classZMBQMap.html#a03da6baa219535f2832b0e06858ca14a" title="Gets the map&#39;s name. " alt="" coords="250,5,409,32"/>
+<area shape="rect" id="node3" href="$d9/d60/classZMBQMap.html#a6ad67d8f8d5c2a361546255d4c2e8736" title="Adds a new section to the map of the given size at the given address. " alt="" coords="217,56,441,83"/>
+<area shape="rect" id="node4" href="$d9/d60/classZMBQMap.html#ac6dd2af65556496d2e80dc401047a29d" title="Generates the map based on the sections that have been added with ZMBQMap::InitMap_ExpandMap. " alt="" coords="224,107,435,133"/>
+<area shape="rect" id="node5" href="$d9/d60/classZMBQMap.html#aeb415fc50a9bfe0ceca8e3621603a22e" title="Gets the pointer to the input registers at the given address. " alt="" coords="231,158,427,199"/>
+<area shape="rect" id="node6" href="$d9/d60/classZMBQMap.html#a7723c7d09a8cf07ba57a4bfdb77b8140" title="Gets the pointer to the holding registers at the given address. " alt="" coords="231,223,427,265"/>
 </map>

@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ZeroMBQ
-   &#160;<span id="projectnumber">85</span>
+   &#160;<span id="projectnumber">89</span>
    </div>
    <div id="projectbrief">A ZeroMQ Modbus server. This library provides a system for bridging a ZeroMQ publish-subscribe network to a Modbus server/client network.</div>
   </td>
@@ -115,6 +115,9 @@ $(document).ready(function(){initNavTree('df/d8d/classZMBQDataPoint.html','../..
 </div><!--header-->
 <div class="contents">
 
+<p>Holds and manages a single data point.  
+ <a href="../../df/d8d/classZMBQDataPoint.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="../../db/d3a/dataPoint_8hpp_source.html">dataPoint.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for ZMBQDataPoint:</div>
@@ -129,38 +132,53 @@ Collaboration diagram for ZMBQDataPoint:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad74d128115a8800d1d2d709968a549c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d8d/classZMBQDataPoint.html#ad74d128115a8800d1d2d709968a549c6">ZMBQDataPoint</a> ()</td></tr>
+<tr class="memdesc:ad74d128115a8800d1d2d709968a549c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic constructor. Initializes a data point with the name "Unknown" and the type uint16_t.  <a href="#ad74d128115a8800d1d2d709968a549c6">More...</a><br /></td></tr>
 <tr class="separator:ad74d128115a8800d1d2d709968a549c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c6c5c6d3ba1c0e1a7878313fc2adb6a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d8d/classZMBQDataPoint.html#a1c6c5c6d3ba1c0e1a7878313fc2adb6a">ZMBQDataPoint</a> (std::string <a class="el" href="../../df/d8d/classZMBQDataPoint.html#a4728e1798241604c3c9604d46bcf538e">name</a>, std::string type)</td></tr>
+<tr class="memdesc:a1c6c5c6d3ba1c0e1a7878313fc2adb6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normal constructor. Sets up <a class="el" href="../../df/d8d/classZMBQDataPoint.html#abd27f7bc1342f85c71de9f54ead355c0">m_name</a>, <a class="el" href="../../df/d8d/classZMBQDataPoint.html#a721926bc15c86431c508a687e462e4a9">m_type</a>, <a class="el" href="../../df/d8d/classZMBQDataPoint.html#a2eb635297cb0083c009c82e217944a33">m_size</a>, and initializes <a class="el" href="../../df/d8d/classZMBQDataPoint.html#a681f4eca2f15b5e1f19a942d2d56bf34">m_dataLocations</a>.  <a href="#a1c6c5c6d3ba1c0e1a7878313fc2adb6a">More...</a><br /></td></tr>
 <tr class="separator:a1c6c5c6d3ba1c0e1a7878313fc2adb6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4728e1798241604c3c9604d46bcf538e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d8d/classZMBQDataPoint.html#a4728e1798241604c3c9604d46bcf538e">name</a> ()</td></tr>
+<tr class="memdesc:a4728e1798241604c3c9604d46bcf538e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the data point's name.  <a href="#a4728e1798241604c3c9604d46bcf538e">More...</a><br /></td></tr>
 <tr class="separator:a4728e1798241604c3c9604d46bcf538e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e9cc711aca6538cce66ff92f6286154"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d8d/classZMBQDataPoint.html#a8e9cc711aca6538cce66ff92f6286154">size_bytes</a> ()</td></tr>
+<tr class="memdesc:a8e9cc711aca6538cce66ff92f6286154"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the size of the data point's value in bytes.  <a href="#a8e9cc711aca6538cce66ff92f6286154">More...</a><br /></td></tr>
 <tr class="separator:a8e9cc711aca6538cce66ff92f6286154"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e8edbd052d0ebf4d7997b9c5d572c69"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d8d/classZMBQDataPoint.html#a6e8edbd052d0ebf4d7997b9c5d572c69">size_registers</a> ()</td></tr>
+<tr class="memdesc:a6e8edbd052d0ebf4d7997b9c5d572c69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the size of the data point's value in registers (uint16_t).  <a href="#a6e8edbd052d0ebf4d7997b9c5d572c69">More...</a><br /></td></tr>
 <tr class="separator:a6e8edbd052d0ebf4d7997b9c5d572c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8723f418ef0052231517e57200ac46b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d8d/classZMBQDataPoint.html#a8723f418ef0052231517e57200ac46b0">addDataLocation</a> (void *dataPointer)</td></tr>
+<tr class="memdesc:a8723f418ef0052231517e57200ac46b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a data location to the data point's list of destination pointers.  <a href="#a8723f418ef0052231517e57200ac46b0">More...</a><br /></td></tr>
 <tr class="separator:a8723f418ef0052231517e57200ac46b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56223cdb6cdf79c3ea3a8f0e009586e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d8d/classZMBQDataPoint.html#a56223cdb6cdf79c3ea3a8f0e009586e4">publish</a> (void *dataMessage)</td></tr>
+<tr class="memdesc:a56223cdb6cdf79c3ea3a8f0e009586e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publishes new data to all of the destination pointers.  <a href="#a56223cdb6cdf79c3ea3a8f0e009586e4">More...</a><br /></td></tr>
 <tr class="separator:a56223cdb6cdf79c3ea3a8f0e009586e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:abd27f7bc1342f85c71de9f54ead355c0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d8d/classZMBQDataPoint.html#abd27f7bc1342f85c71de9f54ead355c0">m_name</a></td></tr>
+<tr class="memdesc:abd27f7bc1342f85c71de9f54ead355c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the name of the data point.  <a href="#abd27f7bc1342f85c71de9f54ead355c0">More...</a><br /></td></tr>
 <tr class="separator:abd27f7bc1342f85c71de9f54ead355c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a721926bc15c86431c508a687e462e4a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d85/data_8hpp.html#aa082c000e4eff6ed512714ea0a33d27b">DATA_TYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d8d/classZMBQDataPoint.html#a721926bc15c86431c508a687e462e4a9">m_type</a></td></tr>
+<tr class="memdesc:a721926bc15c86431c508a687e462e4a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the <a class="el" href="../../da/d85/data_8hpp.html#aa082c000e4eff6ed512714ea0a33d27b">DATA_TYPE</a> type of the data point.  <a href="#a721926bc15c86431c508a687e462e4a9">More...</a><br /></td></tr>
 <tr class="separator:a721926bc15c86431c508a687e462e4a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2eb635297cb0083c009c82e217944a33"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d8d/classZMBQDataPoint.html#a2eb635297cb0083c009c82e217944a33">m_size</a></td></tr>
+<tr class="memdesc:a2eb635297cb0083c009c82e217944a33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the size of the data point value in bytes.  <a href="#a2eb635297cb0083c009c82e217944a33">More...</a><br /></td></tr>
 <tr class="separator:a2eb635297cb0083c009c82e217944a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a681f4eca2f15b5e1f19a942d2d56bf34"><td class="memItemLeft" align="right" valign="top">std::vector&lt; void * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d8d/classZMBQDataPoint.html#a681f4eca2f15b5e1f19a942d2d56bf34">m_dataLocations</a></td></tr>
+<tr class="memdesc:a681f4eca2f15b5e1f19a942d2d56bf34"><td class="mdescLeft">&#160;</td><td class="mdescRight">std::vector containing the list of destination pointers.  <a href="#a681f4eca2f15b5e1f19a942d2d56bf34">More...</a><br /></td></tr>
 <tr class="separator:a681f4eca2f15b5e1f19a942d2d56bf34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html#l00010">10</a> of file <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html">dataPoint.hpp</a>.</p>
+<div class="textblock"><p>Holds and manages a single data point. </p>
+
+<p>Definition at line <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html#l00014">14</a> of file <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html">dataPoint.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ad74d128115a8800d1d2d709968a549c6"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">ZMBQDataPoint::ZMBQDataPoint </td>
@@ -169,9 +187,26 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/df2/dataPoint_8cpp_source.html#l00007">7</a> of file <a class="el" href="../../dc/df2/dataPoint_8cpp_source.html">dataPoint.cpp</a>.</p>
+<p>Basic constructor. Initializes a data point with the name "Unknown" and the type uint16_t. </p>
+
+<p>Definition at line <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html#l00018">18</a> of file <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html">dataPoint.hpp</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d8d/classZMBQDataPoint_ad74d128115a8800d1d2d709968a549c6_cgraph.png" border="0" usemap="#df/d8d/classZMBQDataPoint_ad74d128115a8800d1d2d709968a549c6_cgraph" alt=""/></div>
+<map name="df/d8d/classZMBQDataPoint_ad74d128115a8800d1d2d709968a549c6_cgraph" id="df/d8d/classZMBQDataPoint_ad74d128115a8800d1d2d709968a549c6_cgraph">
+<area shape="rect" id="node2" href="../../df/d8d/classZMBQDataPoint.html#a4728e1798241604c3c9604d46bcf538e" title="Gets the data point&#39;s name. " alt="" coords="289,5,460,32"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
@@ -199,16 +234,17 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/df2/dataPoint_8cpp_source.html#l00012">12</a> of file <a class="el" href="../../dc/df2/dataPoint_8cpp_source.html">dataPoint.cpp</a>.</p>
+<p>Normal constructor. Sets up <a class="el" href="../../df/d8d/classZMBQDataPoint.html#abd27f7bc1342f85c71de9f54ead355c0">m_name</a>, <a class="el" href="../../df/d8d/classZMBQDataPoint.html#a721926bc15c86431c508a687e462e4a9">m_type</a>, <a class="el" href="../../df/d8d/classZMBQDataPoint.html#a2eb635297cb0083c009c82e217944a33">m_size</a>, and initializes <a class="el" href="../../df/d8d/classZMBQDataPoint.html#a681f4eca2f15b5e1f19a942d2d56bf34">m_dataLocations</a>. </p>
+
+<p>Definition at line <a class="el" href="../../dc/df2/dataPoint_8cpp_source.html#l00007">7</a> of file <a class="el" href="../../dc/df2/dataPoint_8cpp_source.html">dataPoint.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../df/d8d/classZMBQDataPoint_a1c6c5c6d3ba1c0e1a7878313fc2adb6a_cgraph.png" border="0" usemap="#df/d8d/classZMBQDataPoint_a1c6c5c6d3ba1c0e1a7878313fc2adb6a_cgraph" alt=""/></div>
 <map name="df/d8d/classZMBQDataPoint_a1c6c5c6d3ba1c0e1a7878313fc2adb6a_cgraph" id="df/d8d/classZMBQDataPoint_a1c6c5c6d3ba1c0e1a7878313fc2adb6a_cgraph">
-<area shape="rect" id="node2" href="../../df/d8d/classZMBQDataPoint.html#a4728e1798241604c3c9604d46bcf538e" title="ZMBQDataPoint::name" alt="" coords="303,5,474,32"/>
-<area shape="rect" id="node3" href="../../d3/d8a/classZMBQData.html#a4826928430238292165686d69b0c60c4" title="Converts a type string to a DATA_TYPE value. " alt="" coords="289,56,488,83"/>
-<area shape="rect" id="node4" href="../../d3/d8a/classZMBQData.html#af40dacabc0bbf655066d54bd3e63330b" title="Gets the size (in bytes) of a DATA_TYPE value. " alt="" coords="311,107,467,133"/>
+<area shape="rect" id="node2" href="../../d3/d8a/classZMBQData.html#a4826928430238292165686d69b0c60c4" title="Converts a type string to a DATA_TYPE value. " alt="" coords="289,5,488,32"/>
+<area shape="rect" id="node3" href="../../d3/d8a/classZMBQData.html#af40dacabc0bbf655066d54bd3e63330b" title="Gets the size (in bytes) of a DATA_TYPE value. " alt="" coords="311,56,467,83"/>
 </map>
 </div>
 </p>
@@ -230,7 +266,15 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/df2/dataPoint_8cpp_source.html#l00019">19</a> of file <a class="el" href="../../dc/df2/dataPoint_8cpp_source.html">dataPoint.cpp</a>.</p>
+<p>Adds a data location to the data point's list of destination pointers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dataPointer</td><td>Pointer to the data location. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../dc/df2/dataPoint_8cpp_source.html#l00014">14</a> of file <a class="el" href="../../dc/df2/dataPoint_8cpp_source.html">dataPoint.cpp</a>.</p>
 
 </div>
 </div>
@@ -255,7 +299,10 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html#l00016">16</a> of file <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html">dataPoint.hpp</a>.</p>
+<p>Gets the data point's name. </p>
+<dl class="section return"><dt>Returns</dt><dd>The value of <a class="el" href="../../df/d8d/classZMBQDataPoint.html#abd27f7bc1342f85c71de9f54ead355c0">m_name</a>. </dd></dl>
+
+<p>Definition at line <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html#l00024">24</a> of file <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html">dataPoint.hpp</a>.</p>
 
 </div>
 </div>
@@ -273,7 +320,15 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../dc/df2/dataPoint_8cpp_source.html#l00024">24</a> of file <a class="el" href="../../dc/df2/dataPoint_8cpp_source.html">dataPoint.cpp</a>.</p>
+<p>Publishes new data to all of the destination pointers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dataMessage</td><td>Pointer to the new data received from ZeroMQ. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../dc/df2/dataPoint_8cpp_source.html#l00019">19</a> of file <a class="el" href="../../dc/df2/dataPoint_8cpp_source.html">dataPoint.cpp</a>.</p>
 
 </div>
 </div>
@@ -298,7 +353,10 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html#l00017">17</a> of file <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html">dataPoint.hpp</a>.</p>
+<p>Gets the size of the data point's value in bytes. </p>
+<dl class="section return"><dt>Returns</dt><dd>The value of <a class="el" href="../../df/d8d/classZMBQDataPoint.html#a2eb635297cb0083c009c82e217944a33">m_size</a>; </dd></dl>
+
+<p>Definition at line <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html#l00027">27</a> of file <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html">dataPoint.hpp</a>.</p>
 
 </div>
 </div>
@@ -323,15 +381,18 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html#l00018">18</a> of file <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html">dataPoint.hpp</a>.</p>
+<p>Gets the size of the data point's value in registers (uint16_t). </p>
+<dl class="section return"><dt>Returns</dt><dd>The value of <a class="el" href="../../df/d8d/classZMBQDataPoint.html#a2eb635297cb0083c009c82e217944a33">m_size</a> divided by the size of uint16_t. </dd></dl>
+
+<p>Definition at line <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html#l00030">30</a> of file <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html">dataPoint.hpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../df/d8d/classZMBQDataPoint_a6e8edbd052d0ebf4d7997b9c5d572c69_cgraph.png" border="0" usemap="#df/d8d/classZMBQDataPoint_a6e8edbd052d0ebf4d7997b9c5d572c69_cgraph" alt=""/></div>
 <map name="df/d8d/classZMBQDataPoint_a6e8edbd052d0ebf4d7997b9c5d572c69_cgraph" id="df/d8d/classZMBQDataPoint_a6e8edbd052d0ebf4d7997b9c5d572c69_cgraph">
-<area shape="rect" id="node2" href="../../df/d8d/classZMBQDataPoint.html#a8723f418ef0052231517e57200ac46b0" title="ZMBQDataPoint::addDataLocation" alt="" coords="212,5,455,32"/>
-<area shape="rect" id="node3" href="../../df/d8d/classZMBQDataPoint.html#a56223cdb6cdf79c3ea3a8f0e009586e4" title="ZMBQDataPoint::publish" alt="" coords="244,56,423,83"/>
+<area shape="rect" id="node2" href="../../df/d8d/classZMBQDataPoint.html#a8723f418ef0052231517e57200ac46b0" title="Adds a data location to the data point&#39;s list of destination pointers. " alt="" coords="212,5,455,32"/>
+<area shape="rect" id="node3" href="../../df/d8d/classZMBQDataPoint.html#a56223cdb6cdf79c3ea3a8f0e009586e4" title="Publishes new data to all of the destination pointers. " alt="" coords="244,56,423,83"/>
 </map>
 </div>
 </p>
@@ -357,7 +418,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html#l00027">27</a> of file <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html">dataPoint.hpp</a>.</p>
+<p>std::vector containing the list of destination pointers. </p>
+
+<p>Definition at line <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html#l00047">47</a> of file <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html">dataPoint.hpp</a>.</p>
 
 </div>
 </div>
@@ -379,7 +442,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html#l00024">24</a> of file <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html">dataPoint.hpp</a>.</p>
+<p>Contains the name of the data point. </p>
+
+<p>Definition at line <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html#l00041">41</a> of file <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html">dataPoint.hpp</a>.</p>
 
 </div>
 </div>
@@ -401,7 +466,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html#l00026">26</a> of file <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html">dataPoint.hpp</a>.</p>
+<p>Contains the size of the data point value in bytes. </p>
+
+<p>Definition at line <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html#l00045">45</a> of file <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html">dataPoint.hpp</a>.</p>
 
 </div>
 </div>
@@ -423,7 +490,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html#l00025">25</a> of file <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html">dataPoint.hpp</a>.</p>
+<p>Contains the <a class="el" href="../../da/d85/data_8hpp.html#aa082c000e4eff6ed512714ea0a33d27b">DATA_TYPE</a> type of the data point. </p>
+
+<p>Definition at line <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html#l00043">43</a> of file <a class="el" href="../../db/d3a/dataPoint_8hpp_source.html">dataPoint.hpp</a>.</p>
 
 </div>
 </div>

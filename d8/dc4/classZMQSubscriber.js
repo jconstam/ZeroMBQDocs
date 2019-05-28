@@ -1,6 +1,7 @@
 var classZMQSubscriber =
 [
     [ "ZMQSubscriber", "d8/dc4/classZMQSubscriber.html#a604679a6121dfbdee872c91b385e446c", null ],
+    [ "socketHasMoreData", "d8/dc4/classZMQSubscriber.html#aa21f63f48860b1e3e8877ccffa0316fa", null ],
     [ "start", "d8/dc4/classZMQSubscriber.html#a1b2110214aebd6ac5830791613e31da7", null ],
     [ "stop", "d8/dc4/classZMQSubscriber.html#a9e05f5c63499cd3801e6fed7819400c9", null ],
     [ "subThreadFunction", "d8/dc4/classZMQSubscriber.html#a2e0fbf060e6ee819dc53e3313910cdbf", null ],

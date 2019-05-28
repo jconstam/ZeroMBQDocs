@@ -1,5 +1,4 @@
 <map id="ZMBQDataPoint::ZMBQDataPoint" name="ZMBQDataPoint::ZMBQDataPoint">
-<area shape="rect" id="node2" href="$df/d8d/classZMBQDataPoint.html#a4728e1798241604c3c9604d46bcf538e" title="ZMBQDataPoint::name" alt="" coords="303,5,474,32"/>
-<area shape="rect" id="node3" href="$d3/d8a/classZMBQData.html#a4826928430238292165686d69b0c60c4" title="Converts a type string to a DATA_TYPE value. " alt="" coords="289,56,488,83"/>
-<area shape="rect" id="node4" href="$d3/d8a/classZMBQData.html#af40dacabc0bbf655066d54bd3e63330b" title="Gets the size (in bytes) of a DATA_TYPE value. " alt="" coords="311,107,467,133"/>
+<area shape="rect" id="node2" href="$d3/d8a/classZMBQData.html#a4826928430238292165686d69b0c60c4" title="Converts a type string to a DATA_TYPE value. " alt="" coords="289,5,488,32"/>
+<area shape="rect" id="node3" href="$d3/d8a/classZMBQData.html#af40dacabc0bbf655066d54bd3e63330b" title="Gets the size (in bytes) of a DATA_TYPE value. " alt="" coords="311,56,467,83"/>
 </map>

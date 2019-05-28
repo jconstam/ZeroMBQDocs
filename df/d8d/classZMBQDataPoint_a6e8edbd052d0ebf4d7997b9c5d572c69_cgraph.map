@@ -1,4 +1,4 @@
 <map id="ZMBQDataPoint::size_registers" name="ZMBQDataPoint::size_registers">
-<area shape="rect" id="node2" href="$df/d8d/classZMBQDataPoint.html#a8723f418ef0052231517e57200ac46b0" title="ZMBQDataPoint::addDataLocation" alt="" coords="212,5,455,32"/>
-<area shape="rect" id="node3" href="$df/d8d/classZMBQDataPoint.html#a56223cdb6cdf79c3ea3a8f0e009586e4" title="ZMBQDataPoint::publish" alt="" coords="244,56,423,83"/>
+<area shape="rect" id="node2" href="$df/d8d/classZMBQDataPoint.html#a8723f418ef0052231517e57200ac46b0" title="Adds a data location to the data point&#39;s list of destination pointers. " alt="" coords="212,5,455,32"/>
+<area shape="rect" id="node3" href="$df/d8d/classZMBQDataPoint.html#a56223cdb6cdf79c3ea3a8f0e009586e4" title="Publishes new data to all of the destination pointers. " alt="" coords="244,56,423,83"/>
 </map>
