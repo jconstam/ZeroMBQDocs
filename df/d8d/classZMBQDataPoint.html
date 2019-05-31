@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ZeroMBQ
-   &#160;<span id="projectnumber">89</span>
+   &#160;<span id="projectnumber">92</span>
    </div>
    <div id="projectbrief">A ZeroMQ Modbus server. This library provides a system for bridging a ZeroMQ publish-subscribe network to a Modbus server/client network.</div>
   </td>
@@ -149,9 +149,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8723f418ef0052231517e57200ac46b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d8d/classZMBQDataPoint.html#a8723f418ef0052231517e57200ac46b0">addDataLocation</a> (void *dataPointer)</td></tr>
 <tr class="memdesc:a8723f418ef0052231517e57200ac46b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a data location to the data point's list of destination pointers.  <a href="#a8723f418ef0052231517e57200ac46b0">More...</a><br /></td></tr>
 <tr class="separator:a8723f418ef0052231517e57200ac46b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56223cdb6cdf79c3ea3a8f0e009586e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d8d/classZMBQDataPoint.html#a56223cdb6cdf79c3ea3a8f0e009586e4">publish</a> (void *dataMessage)</td></tr>
-<tr class="memdesc:a56223cdb6cdf79c3ea3a8f0e009586e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publishes new data to all of the destination pointers.  <a href="#a56223cdb6cdf79c3ea3a8f0e009586e4">More...</a><br /></td></tr>
-<tr class="separator:a56223cdb6cdf79c3ea3a8f0e009586e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52ad87006d9991e2ab2286a486e80111"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d8d/classZMBQDataPoint.html#a52ad87006d9991e2ab2286a486e80111">writeToModbus</a> (void *dataMessage)</td></tr>
+<tr class="memdesc:a52ad87006d9991e2ab2286a486e80111"><td class="mdescLeft">&#160;</td><td class="mdescRight">WRites new data to all of the destination pointers in Modbus maps.  <a href="#a52ad87006d9991e2ab2286a486e80111">More...</a><br /></td></tr>
+<tr class="separator:a52ad87006d9991e2ab2286a486e80111"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -306,32 +306,6 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a56223cdb6cdf79c3ea3a8f0e009586e4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ZMBQDataPoint::publish </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>dataMessage</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Publishes new data to all of the destination pointers. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dataMessage</td><td>Pointer to the new data received from ZeroMQ. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="../../dc/df2/dataPoint_8cpp_source.html#l00019">19</a> of file <a class="el" href="../../dc/df2/dataPoint_8cpp_source.html">dataPoint.cpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a8e9cc711aca6538cce66ff92f6286154"></a>
 <div class="memitem">
 <div class="memproto">
@@ -392,10 +366,36 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="../../df/d8d/classZMBQDataPoint_a6e8edbd052d0ebf4d7997b9c5d572c69_cgraph.png" border="0" usemap="#df/d8d/classZMBQDataPoint_a6e8edbd052d0ebf4d7997b9c5d572c69_cgraph" alt=""/></div>
 <map name="df/d8d/classZMBQDataPoint_a6e8edbd052d0ebf4d7997b9c5d572c69_cgraph" id="df/d8d/classZMBQDataPoint_a6e8edbd052d0ebf4d7997b9c5d572c69_cgraph">
 <area shape="rect" id="node2" href="../../df/d8d/classZMBQDataPoint.html#a8723f418ef0052231517e57200ac46b0" title="Adds a data location to the data point&#39;s list of destination pointers. " alt="" coords="212,5,455,32"/>
-<area shape="rect" id="node3" href="../../df/d8d/classZMBQDataPoint.html#a56223cdb6cdf79c3ea3a8f0e009586e4" title="Publishes new data to all of the destination pointers. " alt="" coords="244,56,423,83"/>
+<area shape="rect" id="node3" href="../../df/d8d/classZMBQDataPoint.html#a52ad87006d9991e2ab2286a486e80111" title="WRites new data to all of the destination pointers in Modbus maps. " alt="" coords="220,56,447,83"/>
 </map>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="a52ad87006d9991e2ab2286a486e80111"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ZMBQDataPoint::writeToModbus </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dataMessage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>WRites new data to all of the destination pointers in Modbus maps. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dataMessage</td><td>Pointer to the new data received from ZeroMQ. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="../../dc/df2/dataPoint_8cpp_source.html#l00019">19</a> of file <a class="el" href="../../dc/df2/dataPoint_8cpp_source.html">dataPoint.cpp</a>.</p>
 
 </div>
 </div>

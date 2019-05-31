@@ -1,4 +1,4 @@
 <map id="ZMQSubscriber::start" name="ZMQSubscriber::start">
 <area shape="rect" id="node2" href="$d8/dc4/classZMQSubscriber.html#a2e0fbf060e6ee819dc53e3313910cdbf" title="The function to be run in the subscriber thread. " alt="" coords="212,5,408,47"/>
-<area shape="rect" id="node3" href="$df/dda/classZMBQDataPointCollection.html#a36c2eb78c0b5ec3e725c5ecde0f53c95" title="Calls the ZMBQDataPoint::publish function for the ZMBQDataPoint object with the given name..." alt="" coords="456,5,643,47"/>
+<area shape="rect" id="node3" href="$df/dda/classZMBQDataPointCollection.html#acf6761c263bb27e7b61d58ac821ed396" title="Calls the ZMBQDataPoint::writeToModbus function for the ZMBQDataPoint object with the given name..." alt="" coords="456,5,643,47"/>
 </map>
